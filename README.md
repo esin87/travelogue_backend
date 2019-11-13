@@ -1,2 +1,3 @@
-# travelogue_backend
-The backend for my Travelogue application: Django server with a PostgreSQL database
+# Travelogue Backend
+
+The backend for my Travelogue application: a Django REST framework with a PostgreSQL database.
