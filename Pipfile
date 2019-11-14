@@ -11,6 +11,8 @@ pylint = "*"
 django = "*"
 psycopg2-binary = "*"
 djangorestframework = "*"
+djangorestframework-jwt = "*"
+django-cors-headers = "*"
 
 [requires]
 python_version = "3.7"
