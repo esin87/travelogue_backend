@@ -10,4 +10,4 @@ class EntrySerializer(serializers.ModelSerializer):
     class Meta:
         model = Entry
         fields = ('title', 'photo_url', 'place_name',
-                  'notes', 'entry_url', 'owner', 'date',)
+                  'notes', 'entry_url', 'owner', 'date', 'id',)
