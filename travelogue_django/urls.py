@@ -21,7 +21,7 @@ from rest_framework_jwt.views import obtain_jwt_token
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/', include('travelogue.urls')),
+    path('', include('travelogue.urls')),
     path('api-auth/', include('rest_framework.urls', namespace='rest_framework')),
     path('token-auth/', obtain_jwt_token),
     path('core/', include('core.urls')),
