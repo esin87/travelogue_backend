@@ -10,7 +10,6 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/2.2/ref/settings/
 """
 
-import dj_database_url
 import django_heroku
 import os
 
@@ -46,6 +45,7 @@ INSTALLED_APPS = [
     'corsheaders',
     'core.apps.CoreConfig',
     'django_heroku',
+
 ]
 
 LOGIN_REDIRECT_URL = '/'
@@ -110,7 +110,6 @@ DATABASES = {
     }
 }
 
-db_from_env = dj_database_url.config(conn_max_age=600)
 DATABASES['default'].update(db_from_env)
 # Password validation
 # https://docs.djangoproject.com/en/2.2/ref/settings/#auth-password-validators
