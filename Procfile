@@ -1,1 +1,1 @@
-web: gunicorn travelogue_django.wsgi —-log-file -
+web: gunicorn travelogue_django.wsgi
