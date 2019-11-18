@@ -1,1 +1,0 @@
-web: gunicorn travelogue_django.wsgi --log-file -
