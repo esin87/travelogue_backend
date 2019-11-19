@@ -23,6 +23,8 @@ Travelogue allows users to create travel diary entries that include the entry ti
 
 ![Screenshot of home page wireframe](Planning/TRAVELOGUE_WIREFRAMES/User_Home.png)
 
+![Screenshot of Travelogue Home page](Planning/Screenshots/travelogue_home.png)
+
 I used Balsamiq to create wire frames for the main page views. As a backwards-planner, I find it essential to have the end goal concretely in mind before beginning a project. To-do lists are one of my other great loves, and my [Trello board](https://trello.com/b/jcfMg5Mh/travelogue) helped keep me organized throughout this process.
 
 ![Screenshot of req-res cycles](Planning/Travelogue_Planning_Slides/Travelogue_Planning_Slides.014.jpeg)
@@ -33,9 +35,9 @@ Additionally, this was my first time building an application with a React fronte
 
 This git repo hosts the backend for my Travelogue application. The frontend was built with React and deployed via GitHub Pages, and the backend is built with a Django REST framework using a PostgreSQL database, deployed via Heroku.
 
-![Screenshot of Travelogue Home page](Planning/Screenshots/travelogue_home.png)
-
 Users who log in or sign up have full CRUD access to their entries. Special features include a Google Maps component that calls both the Google Maps and the Google Geocode APIs.
+
+![Screenshot of create page](Planning/Screenshots/travelogue_create.png)
 
 ## Features
 
