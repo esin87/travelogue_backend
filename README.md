@@ -16,7 +16,7 @@ Travelogue allows users to create travel diary entries that include the entry ti
 
 ## Travelogue User Stories
 
--   **What does the Travelogue user want?** The Travelogue user wants a place to document and remember the details of their journeys, whether for the purposes of future visits, social sharing and recommendations,
+-   **What does the Travelogue user want?** The Travelogue user wants a place to document and remember the details of their journeys, whether for the purposes of future visits, social sharing and recommendations, or just to preserve the memory.
 -   **How will the application satisfy the user?** The Travelogue user will be satisfied if they can keep a travel diary that records their journeys, with entries detailing specific aspects of an experience, including dates, notes, maps, and pictures. The user will also want to be able to read, update, and delete travel diary entries.
 
 ## Wireframing & Planning
