@@ -8,7 +8,7 @@ As a child of parents from two different countries, I was no stranger to travel 
 
 For the past three months, as I completed a remote software engineering bootcamp, I was tied to my home, my room, and my desk with its double monitors. And yet, even though you could usually find me in a very narrow geographic radius, I was on a journey that broadened my horizons in so many ways.
 
-Leaving your old job and career to pursue something new is an inherently hopeful and also vulnerable act, just like travel. So when it came time to pick my capstone project, I decided to blend my two loves and create a software application about travel.
+Leaving your old job and career to pursue something new is a vulnerable and hopeful act, just like travel. So when it came time to pick my capstone project, I decided to blend these two ideas and create a software application about travel.
 
 [Travelogue](https://esin87.github.io/travelogue/) is a place for users to tell their travel stories. Whether you're a cosmopolitan or a first-time traveler, no matter where the journey takes you, this is a place to record what happened, who you met, where you stayed, what you ate. If it made an impact on your travels, you'll want to remember the highlights of your journey.
 
@@ -33,15 +33,17 @@ Additionally, this was my first time building an application with a React fronte
 
 ## Technical Specifications
 
-This git repo hosts the backend for my Travelogue application. The frontend was built with React and deployed via GitHub Pages, and the backend is built with a Django REST framework using a PostgreSQL database, deployed via Heroku.
+This git repo hosts the backend for my Travelogue application. The frontend was built with React and deployed via GitHub Pages, and the backend is built with a Django REST framework using a PostgreSQL database, deployed via Heroku. I chose React, a frontend JSX framework, because it creates a single-page application with dynamic client-side component rendering, creating a seamless user experience and cutting down on server wait time.
 
-Users who log in or sign up have full CRUD access to their entries. Special features include a Google Maps component that calls both the Google Maps and the Google Geocode APIs.
+Special features include a Google Maps component that calls both the Google Maps and the Google Geocode APIs in the Entry Detail view as shown below.
+
+![Screenshot of Entry Detail page](Planning/Screenshots/travelogue_entrydetail.png)
+
+Users who log in or sign up have full CRUD access to their entries with basic form validation in place for the edit and create views.
 
 ![Screenshot of create page](Planning/Screenshots/travelogue_create.png)
 
 ## Features
-
-![Screenshot of Entry Detail page](Planning/Screenshots/travelogue_entrydetail.png)
 
 Travelogue is currently at the Silver Level:
 
@@ -50,14 +52,13 @@ Travelogue is currently at the Silver Level:
     -   [x] Backend built with Django and deployed via Heroku
     -   [x] Frontend built with React and deployed via GitHub Pages
     -   [x] Homepage with clickable array of entries
-    -   [x] Basic CRUD functionality on all entry items
     -   [x] Create, read, update, and delete functionality on entries
 
 -   **Silver:**
 
-    -   [x] Interactive map showcasing location through Google Maps and Google Geocode APIs
-    -   [x] User Model with JWT Authentication for create, update and destroy routes
-    -   [x] Form validation
+    -   [x] Interactive map showcasing entry location through Google Maps API and Google Geocode APIs
+    -   [x] User Model with JWT Authentication on the backend for all data create, update and destroy routes, integrated into the frontend
+    -   [x] Form validation in React for create/edit functions
     -   [ ] Mobile responsive design
 
 *   **Gold:**
@@ -69,7 +70,19 @@ Travelogue is currently at the Silver Level:
 -   **Platinum:**
     -   [ ] Users can see, like and comment on other user's entries
 
-In terms of future directions: I plan to build out the app further, prioritizing mobile responsiveness, social features, and cleaning up React routing bugs.
+## Installation Instructions
+
+If you are interested in downloading the code for either stack:
+
+-   **Frontend:** Run npm install in the project directory via CLI to download required dependencies such as React-Router and Google-Map-React. Then npm run start will start the application on localhost:3000.
+
+-   **Backend:** Run pipenv install in the virtual environment of the project directory CLI to download required dependencies such as Django, Django-Rest-Framework and JWT-Authentication. Then running python3 manage.py runserver will start a local version of the backend on port 8000.
+
+## Unsolved Problems and Future Directions
+
+My biggest unsolved problem is that refreshing my React frontend sometimes breaks the application. I also had to use some hacks to get the user home page to replace the landing login/signup page, and I would refactor the component hierarchy to make it less hack-y and more React-y. Additionally sometimes the JWT expires but does not fully log out the user. The page gets stuck on the home page, and the user has to manually take the "/home" path out of the URL to be able to reach the sign in page again.
+
+In terms of future directions: I plan to build out the app further, improving the authentication process, then prioritizing mobile responsiveness and social responsiveness, to allow users to create entries on the go and share their stories with their communities.
 
 ## Useful Resources & Gratitude
 
