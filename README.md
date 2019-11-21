@@ -95,7 +95,7 @@ Travelogue is currently at the Silver Level:
 
 -   **Silver:**
 
-    -   [x] Interactive map showcasing entry location through Google Maps API and Google Geocode APIs
+    -   [x] Interactive map showcasing entry location through Google Maps API and Google Geocode APIs (this feature is currently disabled due to an API key issue)
     -   [x] User Model with JWT Authentication on the backend for all data create, update and destroy routes, integrated into the frontend
     -   [x] Form validation in React for create/edit functions
     -   [ ] Mobile responsive design
