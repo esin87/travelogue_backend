@@ -21,12 +21,12 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'hg-0qsn2&2e_)1e9^mewu0o)2nb&^!^ypi5082ye64o-$lz12s'
+SECRET_KEY = os.environ['SECRET_KEY']
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['0.0.0.0', 'localhost', 'esin-travelogue-api.herokuapp.com']
+ALLOWED_HOSTS = ['0.0.0.0', 'localhost', 'esin-travelogue-api.herokuapp.com', ]
 
 
 # Application definition
@@ -99,7 +99,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'travelogue',
-        'USER': 'travelogueuser2',
+        'USER': 'travelogueuser',
         'PASSWORD': 'travelogue',
         'HOST': 'localhost'
     }
@@ -147,7 +147,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 CORS_ORIGIN_WHITELIST = ('http://localhost:3000',
-                         'https://esin87.github.io/travelogue', 'https://esin87.github.io',)
+                         'https://esins-travelogue.herokuapp.com',)
 
 JWT_AUTH = {
     'JWT_RESPONSE_PAYLOAD_HANDLER': 'travelogue_django.utils.my_jwt_response_handler'
